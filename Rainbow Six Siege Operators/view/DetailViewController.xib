@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailViewController" customModule="Rainbow_Six_Siege_Operators" customModuleProvider="target">
+            <connections>
+                <outlet property="backgroundPicture" destination="hV1-aX-GNN" id="8fz-dZ-NWM"/>
+                <outlet property="operatorBio" destination="5Qn-wa-Mj4" id="uAM-LC-S64"/>
+                <outlet property="operatorIcon" destination="LSa-bi-k8a" id="NHO-IL-GAa"/>
+                <outlet property="operatorName" destination="kSM-dX-KKF" id="5cY-sb-JQ1"/>
+                <outlet property="operatorRole" destination="Puw-Ng-qCk" id="7bq-Me-LFn"/>
+                <outlet property="operatorSide" destination="8Qo-Cn-Whd" id="QIO-EH-S4L"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="ADBannerView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="r6-operators-list-jager" translatesAutoresizingMaskIntoConstraints="NO" id="hV1-aX-GNN">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                </imageView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DaZ-8b-YOd">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d1O-fM-Hl3">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="1040.5"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4S8-dH-Ow1">
+                                    <rect key="frame" x="25" y="250" width="270" height="40"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jager" translatesAutoresizingMaskIntoConstraints="NO" id="LSa-bi-k8a">
+                                            <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="6NO-hj-h6g"/>
+                                                <constraint firstAttribute="width" constant="40" id="NfY-Qk-UN8"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BLACKBEARD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kSM-dX-KKF">
+                                            <rect key="frame" x="40" y="0.0" width="230" height="40"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="W9X-Jl-1LB">
+                                    <rect key="frame" x="66.5" y="298" width="187" height="20.5"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SIDE" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aex-xO-Rb2">
+                                            <rect key="frame" x="0.0" y="0.0" width="89.5" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DEFENDER" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Qo-Cn-Whd">
+                                            <rect key="frame" x="97.5" y="0.0" width="89.5" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Roam, Secure" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Puw-Ng-qCk">
+                                    <rect key="frame" x="107" y="326.5" width="106.5" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Qn-wa-Mj4">
+                                    <rect key="frame" x="16" y="355" width="288" height="669.5"/>
+                                    <string key="text">“Birthdays. Proposals. These should be surprises. No one wants a grenade to the face.”
+
+Raised by his uncle, a mechanic with the Bundespolizei (BPOL) Aviation Group, Streicher was around engines and motors at an early age. While he demonstrated skills in mechanics, it didn’t hold the challenge that he was looking for. Since he had an affinity for complex machinery, his uncle encouraged him to study aeronautical engineering at university, but strict academic form was an uncomfortable fit for him. So while Streicher’s grades were acceptable, he had a tendency toward restless antics. Following his hobby and passion in flying, he spent considerable time around pilots and aircraft. Private corporations sought him out, but Streicher joined BPOL-Aviation Group because it offered him unique challenges, the opportunity to fly and to serve his country. Almost immediately, Streicher began designing defensive weapon systems for BPOL including a ground-based Active Defense System (ADS) prototype. It was this prototype that caught the attention of GSG 9 and Rainbow.</string>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="5Qn-wa-Mj4" secondAttribute="trailing" constant="16" id="1Qu-HW-Icm"/>
+                                <constraint firstItem="4S8-dH-Ow1" firstAttribute="top" secondItem="d1O-fM-Hl3" secondAttribute="top" constant="250" id="FIG-nJ-2YH"/>
+                                <constraint firstItem="5Qn-wa-Mj4" firstAttribute="top" secondItem="Puw-Ng-qCk" secondAttribute="bottom" constant="8" id="LSy-Tf-ds6"/>
+                                <constraint firstItem="5Qn-wa-Mj4" firstAttribute="leading" secondItem="d1O-fM-Hl3" secondAttribute="leading" constant="16" id="T7t-be-4JQ"/>
+                                <constraint firstAttribute="bottom" secondItem="5Qn-wa-Mj4" secondAttribute="bottom" constant="16" id="TKu-D5-neu"/>
+                                <constraint firstItem="W9X-Jl-1LB" firstAttribute="top" secondItem="4S8-dH-Ow1" secondAttribute="bottom" constant="8" id="i2h-2x-7wI"/>
+                                <constraint firstItem="W9X-Jl-1LB" firstAttribute="centerX" secondItem="d1O-fM-Hl3" secondAttribute="centerX" id="i6I-mJ-kSM"/>
+                                <constraint firstItem="4S8-dH-Ow1" firstAttribute="centerX" secondItem="d1O-fM-Hl3" secondAttribute="centerX" id="oWo-pb-Ne7"/>
+                                <constraint firstItem="Puw-Ng-qCk" firstAttribute="top" secondItem="W9X-Jl-1LB" secondAttribute="bottom" constant="8" id="v26-LU-aaX"/>
+                                <constraint firstItem="Puw-Ng-qCk" firstAttribute="centerX" secondItem="d1O-fM-Hl3" secondAttribute="centerX" id="wh9-YB-GiI"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="d1O-fM-Hl3" firstAttribute="height" secondItem="DaZ-8b-YOd" secondAttribute="height" priority="250" id="675-fz-ChT"/>
+                        <constraint firstItem="d1O-fM-Hl3" firstAttribute="leading" secondItem="DaZ-8b-YOd" secondAttribute="leading" id="AwB-dI-odC"/>
+                        <constraint firstAttribute="trailing" secondItem="d1O-fM-Hl3" secondAttribute="trailing" id="Tgy-IH-AGz"/>
+                        <constraint firstItem="d1O-fM-Hl3" firstAttribute="top" secondItem="DaZ-8b-YOd" secondAttribute="top" id="gBf-Ah-LM0"/>
+                        <constraint firstItem="d1O-fM-Hl3" firstAttribute="width" secondItem="DaZ-8b-YOd" secondAttribute="width" id="lyA-K9-tdC"/>
+                        <constraint firstAttribute="bottom" secondItem="d1O-fM-Hl3" secondAttribute="bottom" id="w5B-PC-kFE"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="hV1-aX-GNN" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="2Y5-e8-9lP"/>
+                <constraint firstItem="DaZ-8b-YOd" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="4TQ-33-2EU"/>
+                <constraint firstItem="DaZ-8b-YOd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="4U6-He-FYc"/>
+                <constraint firstItem="DaZ-8b-YOd" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="KFy-Vb-fjL"/>
+                <constraint firstItem="hV1-aX-GNN" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="M0Y-If-c3Z"/>
+                <constraint firstItem="hV1-aX-GNN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="dmY-dB-VLf"/>
+                <constraint firstItem="hV1-aX-GNN" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="j0J-PR-HFH"/>
+                <constraint firstItem="DaZ-8b-YOd" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="tHG-y0-Dzj"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="108.48214285714285"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="jager" width="1500" height="1500"/>
+        <image name="r6-operators-list-jager" width="300" height="500"/>
+    </resources>
+</document>

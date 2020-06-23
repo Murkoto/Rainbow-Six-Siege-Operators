@@ -7,15 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		445D35FA249C7BC900A8BA1D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445D35F8249C7BC900A8BA1D /* DetailViewController.swift */; };
+		445D35FB249C7BC900A8BA1D /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 445D35F9249C7BC900A8BA1D /* DetailViewController.xib */; };
+		4469AC5324A201C900E882CF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4469AC5124A201C900E882CF /* ProfileViewController.swift */; };
+		4469AC5424A201C900E882CF /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4469AC5224A201C900E882CF /* ProfileViewController.xib */; };
 		44ACE002249B211F00329BD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44ACE001249B211F00329BD1 /* AppDelegate.swift */; };
 		44ACE004249B211F00329BD1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44ACE003249B211F00329BD1 /* SceneDelegate.swift */; };
 		44ACE006249B211F00329BD1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44ACE005249B211F00329BD1 /* ViewController.swift */; };
 		44ACE009249B211F00329BD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44ACE007249B211F00329BD1 /* Main.storyboard */; };
 		44ACE00B249B212300329BD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44ACE00A249B212300329BD1 /* Assets.xcassets */; };
 		44ACE00E249B212300329BD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44ACE00C249B212300329BD1 /* LaunchScreen.storyboard */; };
+		44ACE018249B21CD00329BD1 /* OperatorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44ACE016249B21CD00329BD1 /* OperatorTableViewCell.swift */; };
+		44ACE019249B21CD00329BD1 /* OperatorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44ACE017249B21CD00329BD1 /* OperatorTableViewCell.xib */; };
+		44ACE01C249B247D00329BD1 /* Operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44ACE01B249B247D00329BD1 /* Operator.swift */; };
+		44ACE01E249B24C700329BD1 /* OperatorDummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44ACE01D249B24C700329BD1 /* OperatorDummy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		445D35F8249C7BC900A8BA1D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		445D35F9249C7BC900A8BA1D /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		4469AC5124A201C900E882CF /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		4469AC5224A201C900E882CF /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 		44ACDFFE249B211F00329BD1 /* Rainbow Six Siege Operators.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rainbow Six Siege Operators.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44ACE001249B211F00329BD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44ACE003249B211F00329BD1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +36,10 @@
 		44ACE00A249B212300329BD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44ACE00D249B212300329BD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44ACE00F249B212300329BD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44ACE016249B21CD00329BD1 /* OperatorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorTableViewCell.swift; sourceTree = "<group>"; };
+		44ACE017249B21CD00329BD1 /* OperatorTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OperatorTableViewCell.xib; sourceTree = "<group>"; };
+		44ACE01B249B247D00329BD1 /* Operator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operator.swift; sourceTree = "<group>"; };
+		44ACE01D249B24C700329BD1 /* OperatorDummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorDummy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +53,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		443B0926249B946C0070FDB5 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				4469AC5124A201C900E882CF /* ProfileViewController.swift */,
+				445D35F8249C7BC900A8BA1D /* DetailViewController.swift */,
+				44ACE005249B211F00329BD1 /* ViewController.swift */,
+				44ACE016249B21CD00329BD1 /* OperatorTableViewCell.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		443B0927249B94840070FDB5 /* base */ = {
+			isa = PBXGroup;
+			children = (
+				44ACE001249B211F00329BD1 /* AppDelegate.swift */,
+				44ACE003249B211F00329BD1 /* SceneDelegate.swift */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
 		44ACDFF5249B211F00329BD1 = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +92,35 @@
 		44ACE000249B211F00329BD1 /* Rainbow Six Siege Operators */ = {
 			isa = PBXGroup;
 			children = (
-				44ACE001249B211F00329BD1 /* AppDelegate.swift */,
-				44ACE003249B211F00329BD1 /* SceneDelegate.swift */,
-				44ACE005249B211F00329BD1 /* ViewController.swift */,
-				44ACE007249B211F00329BD1 /* Main.storyboard */,
+				443B0927249B94840070FDB5 /* base */,
+				443B0926249B946C0070FDB5 /* controller */,
+				44ACE01A249B246C00329BD1 /* model */,
+				44ACE015249B21B800329BD1 /* view */,
 				44ACE00A249B212300329BD1 /* Assets.xcassets */,
-				44ACE00C249B212300329BD1 /* LaunchScreen.storyboard */,
 				44ACE00F249B212300329BD1 /* Info.plist */,
 			);
 			path = "Rainbow Six Siege Operators";
+			sourceTree = "<group>";
+		};
+		44ACE015249B21B800329BD1 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				4469AC5224A201C900E882CF /* ProfileViewController.xib */,
+				445D35F9249C7BC900A8BA1D /* DetailViewController.xib */,
+				44ACE017249B21CD00329BD1 /* OperatorTableViewCell.xib */,
+				44ACE007249B211F00329BD1 /* Main.storyboard */,
+				44ACE00C249B212300329BD1 /* LaunchScreen.storyboard */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		44ACE01A249B246C00329BD1 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				44ACE01B249B247D00329BD1 /* Operator.swift */,
+				44ACE01D249B24C700329BD1 /* OperatorDummy.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +181,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4469AC5424A201C900E882CF /* ProfileViewController.xib in Resources */,
 				44ACE00E249B212300329BD1 /* LaunchScreen.storyboard in Resources */,
+				44ACE019249B21CD00329BD1 /* OperatorTableViewCell.xib in Resources */,
+				445D35FB249C7BC900A8BA1D /* DetailViewController.xib in Resources */,
 				44ACE00B249B212300329BD1 /* Assets.xcassets in Resources */,
 				44ACE009249B211F00329BD1 /* Main.storyboard in Resources */,
 			);
@@ -139,8 +198,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				44ACE006249B211F00329BD1 /* ViewController.swift in Sources */,
+				44ACE018249B21CD00329BD1 /* OperatorTableViewCell.swift in Sources */,
+				44ACE01E249B24C700329BD1 /* OperatorDummy.swift in Sources */,
+				44ACE01C249B247D00329BD1 /* Operator.swift in Sources */,
 				44ACE002249B211F00329BD1 /* AppDelegate.swift in Sources */,
 				44ACE004249B211F00329BD1 /* SceneDelegate.swift in Sources */,
+				4469AC5324A201C900E882CF /* ProfileViewController.swift in Sources */,
+				445D35FA249C7BC900A8BA1D /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
