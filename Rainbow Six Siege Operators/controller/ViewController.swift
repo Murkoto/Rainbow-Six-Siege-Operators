@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
         self.navigationItem.titleView = UIImageView(image: UIImage(named: "r6-logo"))
         navigationController?.navigationBar.barStyle = .black
         operatorTableView.dataSource = self
@@ -27,7 +27,6 @@ class ViewController: UIViewController {
     }
 
     @IBAction func goToProfile(_ sender: Any) {
-//        let profilePage = ProfileViewController()
         let profilePage = ProfileViewController(nibName: "ProfileViewController", bundle: nil)
         self.navigationController?.pushViewController(profilePage, animated: true)
     }
@@ -59,9 +58,8 @@ extension ViewController: UITableViewDelegate {
         let detail = DetailViewController(nibName: "DetailViewController", bundle: nil)
         
         detail.ioperator = operators[indexPath.row]
-            
+        tableView.deselectRow(at: indexPath, animated: true)
         self.navigationController?.pushViewController(detail, animated: true)
-//        self.present(detail, animated: true, completion: nil)
     }
 }
 
