@@ -20,7 +20,7 @@
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="yBc-wy-Jd0">
                     <rect key="frame" x="16" y="157.5" width="288" height="165.5"/>
                     <subviews>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rect910" translatesAutoresizingMaskIntoConstraints="NO" id="PY4-jg-HR9">
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="PY4-jg-HR9">
                             <rect key="frame" x="0.0" y="0.0" width="288" height="100"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="100" id="uB0-6X-WvE"/>
@@ -53,6 +53,6 @@
         </view>
     </objects>
     <resources>
-        <image name="rect910" width="547" height="547"/>
+        <image name="profile" width="133" height="133"/>
     </resources>
 </document>
